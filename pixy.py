@@ -71,19 +71,19 @@ class Pixy:
     # Output Actions (Movement)
     def move_up(self):
         if self.y > 0:
-            self.y -= 2
+            self.y -= 1
 
     def move_down(self):
         if self.y < self.HEIGHT - self.size:
-            self.y += 2
+            self.y += 1
 
     def move_left(self):
         if self.x > 0:
-            self.x -= 2
+            self.x -= 1
 
     def move_right(self):
         if self.x < self.WIDTH - self.size:
-            self.x += 2
+            self.x += 1
 
     def stay_still(self):
         pass  # No movement

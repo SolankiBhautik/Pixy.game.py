@@ -20,9 +20,7 @@ class Simulation:
         """Reset simulation to initial state."""
         self.population = [Pixy(random.randint(0, screen.get_width()), random.randint(0, screen.get_height()), num_inputs, num_hidden, num_outputs, screen)
                            for _ in range(POPULATION_SIZE)]
-        self.walls = [CollisionWall((random.randint(0, screen.get_width()), random.randint(0, screen.get_height())),
-                            (random.randint(0, screen.get_width()), random.randint(0, screen.get_height())))
-                    for _ in range(2)]  # 2 random walls initially
+
         self.generation = 1
         self.frame = 0
 

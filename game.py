@@ -1,5 +1,6 @@
 import pygame
 import sys
+
 from config import WIDTH, HEIGHT
 from simulation import Simulation
 from ui import UI
